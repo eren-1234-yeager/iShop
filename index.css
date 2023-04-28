@@ -1,0 +1,28 @@
+.cimg{
+    height:400px;
+    object-fit: cover;
+}
+.card{
+    height:100%;
+    width:24%;
+    display: inline-flex;
+}
+.card-img-top{
+    object-fit: contain;
+    height: 200px;
+}
+.carousel-inner{
+    display:flex;
+    flex-wrap: nowrap;
+    background-color: beige;
+}
+
+.interest{
+    display: flex;
+    gap: 20px;
+}
+
+.items img{
+    height:300px;
+}
+
