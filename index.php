@@ -110,12 +110,14 @@ include "partials/_signupModal.php";
 
 <section class="container items">
   <?php
-echo '<div class="card" style="width: 18rem;">
-  <img src="https://source.unsplash.com/random/1200X900/?'.$_COOKIE['fav'].'" class="card-img-top" alt="...">
-  <div class="card-body">
+  if (isset($_SESSION['username'])) {
+    echo '<div class="card" style="width: 18rem;">
+    <img src="https://source.unsplash.com/random/1200X900/?'.$_COOKIE['fav'].'" class="card-img-top" alt="...">
+    <div class="card-body">
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card\'s content.</p>
-  </div>
-</div>';
+    </div>
+    </div>';
+  }
 // echo $_COOKIE['fav'];
 ?>
 </section>

@@ -4,7 +4,6 @@ if (!defined('const')) {
   header("Location: /ishop");
 }
 session_start();
-include "partials/_user.php";
 ?>
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
@@ -50,9 +49,9 @@ include "partials/_user.php";
         ';
       ?>
         <span class="user">
-          <!-- <a href="/ishop/user.php"><img src="images/user_default.png" style="height: 30px;width: 30px;" class="uimg" alt="img" srcset=""></a> -->
-          <a class="user-toggle" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-          <img src="images/user_default.png" style="height: 30px;width: 30px;" class="uimg" alt="img" srcset="">
+          <a href="/ishop/partials/_user.php"><img src="images/user_default.png" style="height: 30px;width: 30px;" class="uimg" alt="img" srcset=""></a>
+          <!-- <a class="user-toggle" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+          <img src="images/user_default.png" style="height: 30px;width: 30px;" class="uimg" alt="img" srcset=""> -->
       </a>
         </span>
       <?php
